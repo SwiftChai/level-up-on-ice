@@ -1,0 +1,379 @@
+/* Colors #4f6d7a #c0d6df #7bc0ff #4a6fa5 #166088 #F5F5F5 */
+/* Biellman Image by Dimuth Amarasiri from Pixabay */
+
+/* Colors #4f6d7a #c0d6df #7bc0ff #4a6fa5 #166088 #F5F5F5 */
+/* Biellman Image by Dimuth Amarasiri from Pixabay */
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* =====================
+   Nav Bar
+   ===================== */
+nav {
+    background-color: #166088;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Pseudo-class 1: hover state on nav links */
+nav ul li a:hover {
+    color: #c0d6df;
+    text-decoration: underline;
+}
+
+/* =====================
+   Dark Mode
+   ===================== */
+
+/* Style for Dark Mode button */
+#theme-button {
+    color: #166088;
+    border: solid;
+    border-width: medium;
+    border-radius: 25px;
+    background-color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Dark Mode Styles for Button */
+.dark-mode #theme-button {
+    color: #f5f5f5;
+    border-color: #7bc0ff;
+    background-color: #4a6fa5;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: black;
+    color: #f5f5f5;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: #c0d6df;
+}
+
+.dark-mode nav {
+    background-color: #4a6fa5;
+}
+
+.dark-mode nav ul li a {
+    color: #c0d6df;
+}
+
+.dark-mode nav ul li a:hover {
+    color: #7bc0ff;
+}
+
+.dark-mode a:visited {
+    color: #7bc0ff;
+}
+
+/* =====================
+   Header (Flexbox)
+   ===================== */
+
+/* Renamed from .header to .header-container per requirements */
+.header-container {
+    display: flex;
+    flex-direction: row;     /* side-by-side layout */
+    align-items: center;
+    background-color: #dbe9ee;
+    margin-top: 0;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Pseudo-class 2: nth-of-type — left flex-item (text/buttons) */
+.header-item:nth-of-type(1) {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+/* nth-of-type — right flex-item (image) */
+.header-item:nth-of-type(2) {
+    flex: 1;
+    text-align: center;
+}
+
+.header-item:nth-of-type(2) img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Pseudo-class 3: hover state on header buttons */
+.header-container button:hover {
+    background-color: #166088;
+    color: white;
+    cursor: pointer;
+}
+
+.header-container h1 {
+    color: #166088;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header-container h2 {
+    color: #4f6d7a;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.header-container button {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+/* =====================
+   Responsive: stack header vertically on small screens
+   ===================== */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-item:nth-of-type(1) {
+        text-align: center;
+    }
+}
+
+/* =====================
+   Sections
+   ===================== */
+section {
+    padding: 30px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section h2 {
+    color: #166088;
+    border-bottom: 2px solid #c0d6df;
+    padding-bottom: 8px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 16px 0;
+}
+
+/* =====================
+   Links section
+   ===================== */
+a.block {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background-color: #dbe9ee;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 12px;
+    transition: background-color 0.2s;
+}
+
+/* Pseudo-class 4: hover on link cards */
+a.block:hover {
+    background-color: #c0d6df;
+}
+
+a.block h3 {
+    margin: 0 0 6px 0;
+    color: #166088;
+}
+
+a.block p {
+    margin: 0;
+    color: #4f6d7a;
+}
+
+/* =====================
+   RSVP Section
+   ===================== */
+#rsvp {
+    padding: 30px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#rsvp h2 {
+    color: #166088;
+    border-bottom: 2px solid #c0d6df;
+    padding-bottom: 8px;
+}
+
+.rsvp-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.rsvp-para {
+    width: 55%;
+    padding-right: 50px;
+}
+
+.rsvp-participants {
+    width: 55%;
+    padding-right: 10px;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #c0d6df;
+    border-radius: 4px;
+}
+
+#rsvp-button {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#rsvp-button:hover {
+    background-color: #166088;
+}
+
+.error {
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+}
+
+/* =====================
+   Footer
+   ===================== */
+.footer {
+    background-color: #166088;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #c0d6df;
+    text-decoration: underline;
+}
+/* =====================
+   Success Modal (Milestone #4 / Part 8)
+   ===================== */
+
+/* The dark background overlay */
+#success-modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stays in place even if you scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    z-index: 100; /* Sits on top of everything else */
+
+    /* Use flexbox to center the modal perfectly */
+    justify-content: center;
+    align-items: center;
+}
+
+/* The class we will add with JS to show the modal */
+#success-modal-overlay.active {
+    display: flex;
+}
+
+/* The white modal content box */
+#success-modal {
+    background-color: white;
+    color: #166088;
+    padding: 30px 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#success-modal h2 {
+    color: #166088;
+    margin-top: 0;
+}
+
+/* The image animation */
+@keyframes scale-in {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#modal-image {
+    width: 80px;
+    animation: scale-in 0.7s ease-out;
+}

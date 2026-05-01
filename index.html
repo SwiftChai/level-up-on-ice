@@ -1,0 +1,185 @@
+<!-- Colors
+        #4f6d7a #c0d6df #dbe9ee #4a6fa5 #166088 #F5F5F5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/SkateFavicon.png" type="image/png">
+    <title>Level Up on Ice</title>
+</head>
+<body>
+
+<!-- navbar -->
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-button">Toggle Dark Mode</button></li>
+    </ul>
+</nav>
+
+<!-- Header Section -->
+<div id="home" class="header-container">
+    <!-- header-item 1: Title and buttons -->
+    <div class="header-item">
+        <h1>Your Name Here</h1>
+        <h2>Next-Level Skating Starts Here</h2>
+        <button type="button">Register Now</button>
+        <button type="button">Learn More</button>
+    </div>
+
+    <!-- header-item 2: Header image -->
+    <div class="header-item">
+        <img id="header-img" src="img/pairskating.png" alt="Figure Skating"/>
+    </div>
+</div>
+
+<!-- about -->
+<section id="about">
+    <h2>Master the Fundamentals, Embrace the Challenge</h2>
+    <p>Level Up on Ice welcomes skaters of all levels! Work in small groups with experienced coaches who will help you master the fundamentals tailored to your skill level. This isn't just about what happens on the ice—you'll also benefit from guest motivational speakers and specialized classes covering sports psychology, diet and nutrition, and off-ice conditioning. Sessions will dive deep into spins, jumps, edges, stroking, and balance, ensuring that every skater—beginner to advanced—leaves with new skills, knowledge, and confidence!</p>
+    <h3>What to Expect</h3>
+    <h4>Skate to Your Full Potential</h4>
+    <ul>
+        <li><b>Expert Coaching:</b> <i>Work closely with experienced coaches in small groups to refine your skills.</i></li>
+        <li><b>Holistic Approach:</b> <i>Gain insights from guest speakers on sports psychology, nutrition, and off-ice conditioning.</i></li>
+        <li><b>Skill-Focused Sessions:</b> <i>Engage in specialized sessions on spins, jumps, edges, stroking, and balance.</i></li>
+    </ul>
+</section>
+
+<!-- schedule -->
+<section id="schedule">
+    <h2>Event Schedule</h2>
+
+    <h3>Day 1: Arrival and Introduction</h3>
+    <p>Morning:
+
+        Registration & Welcome Ice Breaker
+        Introduction to Coaches and Guest Speakers
+
+
+        Afternoon:
+
+        Group Assignments
+        On-Ice Lessons: Basic Skills and Techniques
+        Off-Ice Class: Sports Psychology Insights
+
+
+        Evening:
+
+        Welcome Dinner & Networking Session
+        Motivational Talk by Guest Speaker
+    </p>
+
+    <img alt="Figure skating silhouette" src="img/figure-skating-silhouette.jpg"/>
+    <h3>Day 2: Intensive Training and Classes</h3>
+    <p>Morning
+
+        On-Ice Drills: Spins and Jumps
+        Off-Ice Class: Nutrition for Skaters
+
+
+        Afternoon:
+
+        On-Ice Drills: Edges and Stroking
+        Off-Ice Conditioning Workshop
+
+
+        Evening:
+
+        Group Activity: Team Building and Fun Challenges
+    </p>
+
+    <h3>Day 3: Skill Application and Reflection</h3>
+    <p>Morning
+
+        On-Ice Practice: Balance and Performance Techniques
+        Off-Ice Class: Mental Preparation for Competitions
+
+
+        Afternoon:
+
+        Showcase and Feedback Session: Skaters demonstrate their progress
+        Closing Ceremony with Awards and Certificates
+
+
+        Evening:
+
+        Farewell Gathering and Open Skate
+    </p>
+</section>
+
+<!-- RSVP Section -->
+<div id="rsvp">
+    <h2>RSVP</h2>
+    <div class="rsvp-container">
+        <div class="rsvp-para">
+            <p>Are you ready to take your skills to the next level? Join us for an incredible ice skating seminar designed just for you! Whether you're a beginner or a seasoned pro, this event is packed with valuable tips, techniques, and insights that will elevate your skating game.</p>
+        </div>
+        <div class="rsvp-participants">
+            <p>🎟️ Ilia from Virginia has RSVPd.</p>
+            <p>🎟️ Alysa from Oakland has RSVPd.</p>
+            <p>🎟️ Amber from Texas has RSVPd.</p>
+        </div>
+    </div>
+
+    <!-- Sign RSVP Form -->
+    <div class="form-container">
+        <form id="rsvp-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="rink">Home Ice Rink:</label>
+            <input type="text" id="rink" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+        </form>
+
+        <!-- Submit button -->
+        <button id="rsvp-button">Submit RSVP</button>
+    </div>
+</div>
+
+<!-- links -->
+<section id="contact">
+    <h2>Links</h2>
+    <a class="block" href="https://usfigureskating.org/">
+        <article>
+            <h3>United Skates Figure Skating</h3>
+            <p>The official site of US Figure Skating</p>
+        </article>
+    </a>
+    <a class="block" href="https://learntoskateusa.com/">
+        <article>
+            <h3>Learn To Skate</h3>
+            <p>Learn to Skate USA introduces beginning skaters to the fundamentals of ice skating.</p>
+        </article>
+    </a>
+</section>
+
+<!-- footer -->
+<div class="footer">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<!-- Success Modal -->
+<div id="success-modal-overlay">
+    <div id="success-modal">
+        <img src="img/SkateFavicon.png" alt="Skating Icon" id="modal-image">
+        <h2>Success!</h2>
+        <p id="modal-message"></p>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
