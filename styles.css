@@ -650,6 +650,15 @@ input::placeholder {
 }
 
 /* =====================
+   Video Section
+   ===================== */
+.video-section {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+
+}
+/* =====================
    Links Section
    ===================== */
 .links-grid {
