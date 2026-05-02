@@ -1,181 +1,234 @@
-<!-- Colors
-        #4f6d7a #c0d6df #dbe9ee #4a6fa5 #166088 #F5F5F5 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/SkateFavicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Level Up on Ice</title>
 </head>
 <body>
 
 <!-- navbar -->
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><button id="theme-button">Toggle Dark Mode</button></li>
-    </ul>
+<nav id="navbar">
+    <div class="nav-inner">
+        <span class="nav-logo">Level Up on Ice</span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="theme-button">Dark Mode</button></li>
+        </ul>
+    </div>
 </nav>
 
-<!-- Header Section -->
-<div id="home" class="header-container">
-    <!-- header-item 1: Title and buttons -->
-    <div class="header-item">
+<!-- Hero Section -->
+<div id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-animate>
+        <p class="hero-eyebrow">Three Days &middot; All Levels &middot; Expert Coaches</p>
         <h1>Your Name Here</h1>
-        <h2>Next-Level Skating Starts Here</h2>
-        <button type="button">Register Now</button>
-        <button type="button">Learn More</button>
-    </div>
-
-    <!-- header-item 2: Header image -->
-    <div class="header-item">
-        <img id="header-img" src="img/pairskating.png" alt="Figure Skating"/>
+        <p class="hero-subtitle">Next-Level Skating Starts Here</p>
+        <div class="hero-buttons">
+            <a href="#rsvp"><button class="btn-primary" type="button">Register Now</button></a>
+            <a href="#about"><button class="btn-secondary" type="button">Learn More</button></a>
+        </div>
     </div>
 </div>
 
 <!-- about -->
-<section id="about">
-    <h2>Master the Fundamentals, Embrace the Challenge</h2>
-    <p>Level Up on Ice welcomes skaters of all levels! Work in small groups with experienced coaches who will help you master the fundamentals tailored to your skill level. This isn't just about what happens on the ice—you'll also benefit from guest motivational speakers and specialized classes covering sports psychology, diet and nutrition, and off-ice conditioning. Sessions will dive deep into spins, jumps, edges, stroking, and balance, ensuring that every skater—beginner to advanced—leaves with new skills, knowledge, and confidence!</p>
-    <h3>What to Expect</h3>
-    <h4>Skate to Your Full Potential</h4>
-    <ul>
-        <li><b>Expert Coaching:</b> <i>Work closely with experienced coaches in small groups to refine your skills.</i></li>
-        <li><b>Holistic Approach:</b> <i>Gain insights from guest speakers on sports psychology, nutrition, and off-ice conditioning.</i></li>
-        <li><b>Skill-Focused Sessions:</b> <i>Engage in specialized sessions on spins, jumps, edges, stroking, and balance.</i></li>
-    </ul>
+<section id="about" data-animate>
+    <div class="section-inner">
+        <p class="section-eyebrow">About the Seminar</p>
+        <h2>Master the Fundamentals,<br>Embrace the Challenge</h2>
+        <p class="section-lead">Level Up on Ice welcomes skaters of all levels! Work in small groups with experienced coaches who will help you master the fundamentals tailored to your skill level. Sessions dive deep into spins, jumps, edges, stroking, and balance — every skater leaves with new skills, knowledge, and confidence.</p>
+
+        <div class="feature-cards">
+            <div class="feature-card">
+                <div class="feature-icon">🏅</div>
+                <h3>Expert Coaching</h3>
+                <p>Work closely with experienced coaches in small groups to refine your technique and elevate your performance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>Holistic Approach</h3>
+                <p>Gain insights from guest speakers on sports psychology, nutrition, and off-ice conditioning.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⛸️</div>
+                <h3>Skill-Focused Sessions</h3>
+                <p>Specialized sessions on spins, jumps, edges, stroking, and balance for every skill level.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- schedule -->
-<section id="schedule">
-    <h2>Event Schedule</h2>
+<section id="schedule" class="schedule-section" data-animate>
+    <div class="section-inner">
+        <p class="section-eyebrow">What's Happening</p>
+        <h2>Event Schedule</h2>
 
-    <h3>Day 1: Arrival and Introduction</h3>
-    <p>Morning:
+        <div class="schedule-grid">
+            <div class="day-card">
+                <div class="day-header">
+                    <span class="day-number">01</span>
+                    <div>
+                        <h3>Arrival &amp; Introduction</h3>
+                        <p class="day-subtitle">Get settled and meet your coaches</p>
+                    </div>
+                </div>
+                <div class="day-sessions">
+                    <div class="session">
+                        <span class="session-time">Morning</span>
+                        <p>Registration &amp; Welcome Ice Breaker &middot; Introduction to Coaches and Guest Speakers</p>
+                    </div>
+                    <div class="session">
+                        <span class="session-time">Afternoon</span>
+                        <p>Group Assignments &middot; On-Ice Lessons: Basic Skills and Techniques &middot; Off-Ice Class: Sports Psychology</p>
+                    </div>
+                    <div class="session">
+                        <span class="session-time">Evening</span>
+                        <p>Welcome Dinner &amp; Networking &middot; Motivational Talk by Guest Speaker</p>
+                    </div>
+                </div>
+            </div>
 
-        Registration & Welcome Ice Breaker
-        Introduction to Coaches and Guest Speakers
+            <div class="day-card">
+                <div class="day-header">
+                    <span class="day-number">02</span>
+                    <div>
+                        <h3>Intensive Training</h3>
+                        <p class="day-subtitle">Push your skills to new limits</p>
+                    </div>
+                </div>
+                <div class="day-sessions">
+                    <div class="session">
+                        <span class="session-time">Morning</span>
+                        <p>On-Ice Drills: Spins and Jumps &middot; Off-Ice Class: Nutrition for Skaters</p>
+                    </div>
+                    <div class="session">
+                        <span class="session-time">Afternoon</span>
+                        <p>On-Ice Drills: Edges and Stroking &middot; Off-Ice Conditioning Workshop</p>
+                    </div>
+                    <div class="session">
+                        <span class="session-time">Evening</span>
+                        <p>Group Activity: Team Building and Fun Challenges</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="day-card">
+                <div class="day-header">
+                    <span class="day-number">03</span>
+                    <div>
+                        <h3>Skill Application</h3>
+                        <p class="day-subtitle">Showcase your progress</p>
+                    </div>
+                </div>
+                <div class="day-sessions">
+                    <div class="session">
+                        <span class="session-time">Morning</span>
+                        <p>On-Ice Practice: Balance and Performance Techniques &middot; Mental Preparation for Competitions</p>
+                    </div>
+                    <div class="session">
+                        <span class="session-time">Afternoon</span>
+                        <p>Showcase &amp; Feedback Session &middot; Closing Ceremony with Awards and Certificates</p>
+                    </div>
+                    <div class="session">
+                        <span class="session-time">Evening</span>
+                        <p>Farewell Gathering and Open Skate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        Afternoon:
-
-        Group Assignments
-        On-Ice Lessons: Basic Skills and Techniques
-        Off-Ice Class: Sports Psychology Insights
-
-
-        Evening:
-
-        Welcome Dinner & Networking Session
-        Motivational Talk by Guest Speaker
-    </p>
-
-    <img alt="Figure skating silhouette" src="img/figure-skating-silhouette.jpg"/>
-    <h3>Day 2: Intensive Training and Classes</h3>
-    <p>Morning
-
-        On-Ice Drills: Spins and Jumps
-        Off-Ice Class: Nutrition for Skaters
-
-
-        Afternoon:
-
-        On-Ice Drills: Edges and Stroking
-        Off-Ice Conditioning Workshop
-
-
-        Evening:
-
-        Group Activity: Team Building and Fun Challenges
-    </p>
-
-    <h3>Day 3: Skill Application and Reflection</h3>
-    <p>Morning
-
-        On-Ice Practice: Balance and Performance Techniques
-        Off-Ice Class: Mental Preparation for Competitions
-
-
-        Afternoon:
-
-        Showcase and Feedback Session: Skaters demonstrate their progress
-        Closing Ceremony with Awards and Certificates
-
-
-        Evening:
-
-        Farewell Gathering and Open Skate
-    </p>
+        <img alt="Figure skating silhouette" src="img/figure-skating-silhouette.jpg" class="schedule-img"/>
+    </div>
 </section>
 
 <!-- RSVP Section -->
-<div id="rsvp">
-    <h2>RSVP</h2>
-    <div class="rsvp-container">
-        <div class="rsvp-para">
-            <p>Are you ready to take your skills to the next level? Join us for an incredible ice skating seminar designed just for you! Whether you're a beginner or a seasoned pro, this event is packed with valuable tips, techniques, and insights that will elevate your skating game.</p>
+<div id="rsvp" data-animate>
+    <div class="section-inner">
+        <p class="section-eyebrow">Join Us</p>
+        <h2>Reserve Your Spot</h2>
+        <div class="rsvp-container">
+            <div class="rsvp-para">
+                <p>Ready to take your skills to the next level? Join us for an incredible ice skating seminar designed for all levels — packed with valuable tips, techniques, and insights to elevate your skating game.</p>
+                <div class="rsvp-participants">
+                    <p>🎟️ Ilia from Virginia has RSVP'd.</p>
+                    <p>🎟️ Alysa from Oakland has RSVP'd.</p>
+                    <p>🎟️ Amber from Texas has RSVP'd.</p>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <form id="rsvp-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rink">Home Ice Rink</label>
+                        <input type="text" id="rink" placeholder="Your home rink" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="you@example.com" required>
+                    </div>
+                </form>
+                <button id="rsvp-button">Submit RSVP &rarr;</button>
+            </div>
         </div>
-        <div class="rsvp-participants">
-            <p>🎟️ Ilia from Virginia has RSVPd.</p>
-            <p>🎟️ Alysa from Oakland has RSVPd.</p>
-            <p>🎟️ Amber from Texas has RSVPd.</p>
-        </div>
-    </div>
-
-    <!-- Sign RSVP Form -->
-    <div class="form-container">
-        <form id="rsvp-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-
-            <label for="rink">Home Ice Rink:</label>
-            <input type="text" id="rink" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" required>
-        </form>
-
-        <!-- Submit button -->
-        <button id="rsvp-button">Submit RSVP</button>
     </div>
 </div>
 
 <!-- links -->
-<section id="contact">
-    <h2>Links</h2>
-    <a class="block" href="https://usfigureskating.org/">
-        <article>
-            <h3>United Skates Figure Skating</h3>
-            <p>The official site of US Figure Skating</p>
-        </article>
-    </a>
-    <a class="block" href="https://learntoskateusa.com/">
-        <article>
-            <h3>Learn To Skate</h3>
-            <p>Learn to Skate USA introduces beginning skaters to the fundamentals of ice skating.</p>
-        </article>
-    </a>
+<section id="contact" data-animate>
+    <div class="section-inner">
+        <p class="section-eyebrow">Resources</p>
+        <h2>Useful Links</h2>
+        <div class="links-grid">
+            <a class="block" href="https://usfigureskating.org/">
+                <article>
+                    <h3>US Figure Skating</h3>
+                    <p>The official site of US Figure Skating</p>
+                    <span class="link-arrow">&rarr;</span>
+                </article>
+            </a>
+            <a class="block" href="https://learntoskateusa.com/">
+                <article>
+                    <h3>Learn To Skate USA</h3>
+                    <p>Introducing beginning skaters to the fundamentals of ice skating.</p>
+                    <span class="link-arrow">&rarr;</span>
+                </article>
+            </a>
+        </div>
+    </div>
 </section>
 
 <!-- footer -->
 <div class="footer">
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="footer-inner">
+        <span class="footer-logo">Level Up on Ice</span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 </div>
 
 <!-- Success Modal -->
 <div id="success-modal-overlay">
     <div id="success-modal">
         <img src="img/SkateFavicon.png" alt="Skating Icon" id="modal-image">
-        <h2>Success!</h2>
+        <h2>You're In!</h2>
         <p id="modal-message"></p>
     </div>
 </div>
